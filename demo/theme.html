@@ -109,7 +109,8 @@ function findSequence(goal) {
   var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
     lineNumbers: true,
     styleActiveLine: true,
-    matchBrackets: true
+    matchBrackets: true,
+    inputStyle: "contenteditable"
   });
   var input = document.getElementById("select");
   function selectTheme() {
